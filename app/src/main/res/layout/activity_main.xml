@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.mlgrier.billboardquiz.MainActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1970's Billboard Charts"
+            style="@style/headerTextStyle"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1) What artist had the most #1 singles?"
+            android:id="@+id/textView"
+            style="@style/questionHeaderTextStyle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elton John"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bee Gees"
+                android:layout_margin="7dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Jackson 5"
+                android:layout_margin="7dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eagles"
+                android:layout_margin="7dp"
+                android:layout_marginRight="16dp" />
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Artist"
+            android:inputType="textCapWords"
+            android:ems="10"
+            android:id="@+id/artistQuestion1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="2) What 2 songs were in the top 5 for the most total weeks at # 1?"
+            android:id="@+id/textView6"
+            style="@style/questionHeaderTextStyle" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shadow Dancing - Andy Gibb"
+            android:id="@+id/checkBox1"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Le Freak - Chic"
+            android:id="@+id/checkBox2"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You Light Up My Life - Debby Boone"
+            android:id="@+id/checkBox3"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Sharona - The Knack"
+            android:id="@+id/checkBox4"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1980's Billboard Charts"
+            style="@style/headerTextStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="3) What artist had the most #1 singles?"
+            android:id="@+id/textView2"
+            style="@style/questionHeaderTextStyle"/>
+
+        <RadioGroup
+            android:id="@+id/radioGQ1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prince"
+                android:id="@+id/princeBtnQ3"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Madonna"
+                android:id="@+id/madonnaBtnQ3"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Michael Jackson"
+                android:id="@+id/michaelBtnQ3"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phil Collins"
+                android:id="@+id/philBtnQ3"
+                android:checked="false" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="4) What song topped the Hot 100 for the highest number of weeks?"
+            android:id="@+id/textView7"
+            style="@style/questionHeaderTextStyle"/>
+
+        <RadioGroup
+            android:id="@+id/radioGQ2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every Breath You Take - The Police"
+                android:id="@+id/policeBtnQ4"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Billie Jean - Michael Jackson"
+                android:id="@+id/michaelBtnQ4"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like A Virgin - Madonna"
+                android:id="@+id/madonnaBtnQ4"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Physical - Olivia Newton-John"
+                android:id="@+id/oliviaBtnQ4"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1990&apos;s Billboard Charts"
+            style="@style/headerTextStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="5) What artist had the most #1 singles?"
+            android:id="@+id/textView3"
+            style="@style/questionHeaderTextStyle"/>
+
+        <RadioGroup
+            android:id="@+id/radioGQ3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Janet Jackson"
+                android:id="@+id/janetBtnQ5"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mariah Carey"
+                android:id="@+id/mariahBtnQ5"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Celine Dion"
+                android:id="@+id/celineBtnQ5"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boyz II Men"
+                android:id="@+id/boyzBtnQ5"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="6) What song topped the Hot 100 for the highest number of weeks?"
+            android:id="@+id/textView8"
+            style="@style/questionHeaderTextStyle"/>
+
+        <RadioGroup
+            android:id="@+id/radioGQ4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I Will Always Love You - Whitney Houston"
+                android:id="@+id/whitneyBtnQ6"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I Swear - All-4-One"
+                android:id="@+id/allBtnQ6"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Un-Break My Heart - Toni Braxton"
+                android:id="@+id/toniBtnQ6"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One Sweet Day - Mariah Carey"
+                android:id="@+id/mariahBtnQ6"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="2000's Billboard Charts"
+            style="@style/headerTextStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="7) What artist had the most #1 singles?"
+            android:id="@+id/textView4"
+            style="@style/questionHeaderTextStyle"/>
+
+        <RadioGroup
+            android:id="@+id/radioGQ5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mariah Carey"
+                android:id="@+id/mariahBtnQ7"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50 Cent"
+                android:id="@+id/centBtnQ7"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Justin Timberlake"
+                android:id="@+id/justinBtnQ7"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usher"
+                android:id="@+id/usherBtnQ7"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="8) What song topped the Hot 100 for the highest number of weeks?"
+            android:id="@+id/textView9"
+            style="@style/questionHeaderTextStyle"/>
+
+        <RadioGroup
+            android:id="@+id/radioGQ6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lose Yourself - Eminem"
+                android:id="@+id/eminemBtnQ8"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We Belong Together - Mariah Carey"
+                android:id="@+id/mariahBtnQ8"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I Gotta Feeling - The Black Eyed Peas"
+                android:id="@+id/blackBtnQ8"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yeah - Usher ft. Lil Jon"
+                android:id="@+id/usherBtnQ8"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="2010's Billboard Charts"
+            style="@style/headerTextStyle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="9) What artist had the most #1 singles?"
+            android:id="@+id/textView5"
+            style="@style/questionHeaderTextStyle"/>
+
+        <RadioGroup
+            android:id="@+id/radioGQ7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rihanna"
+                android:id="@+id/rihannaBtnQ9"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taylor Swift"
+                android:id="@+id/taylorBtnQ9"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adele"
+                android:id="@+id/adeleBtnQ9"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Katy Perry"
+                android:id="@+id/katyBtnQ9"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="10) What song topped the Hot 100 for the highest number of weeks?"
+            android:id="@+id/textView10"
+            style="@style/questionHeaderTextStyle"/>
+
+        <RadioGroup
+            android:id="@+id/radioGQ8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello - Adele"
+                android:id="@+id/adeleBtnQ10"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy - Pharrell Williams"
+                android:id="@+id/pharrellBtnQ10"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uptown Funk - Bruno Mars ft. Mark Ronson"
+                android:id="@+id/brunoBtnQ10"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See You Again - Wiz Khalifa"
+                android:id="@+id/wizBtnQ10"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Submit Quiz"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="submitQuiz"/>
+
+        <TextView
+            android:id="@+id/quizScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</ScrollView>
